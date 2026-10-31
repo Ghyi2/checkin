@@ -22,7 +22,3 @@ jobs:
           gaoxing: ${{ secrets.gaoxing }}
           question: ${{ secrets.question }}
           domain: ${{ secrets.domain }}
-          notify: ${{ secrets.NOTIFY }}
-
-
-
