@@ -4,7 +4,6 @@ on:
   push:
   schedule:
     - cron: '10 16 * * *'
-
 jobs:
   run:
     runs-on: ubuntu-24.04
@@ -20,9 +19,10 @@ jobs:
       - name: 执行签到
         run: npm run main
         env:
-          很高兴: ${{ secrets.很高兴 }}
-          现在,我们要做些什么呢?: ${{ secrets.现在,我们要做些什么呢? }}
-          域: ${{ secrets.域 }}
-          通知: ${{ secrets.NOTIFY }}
+          gaoxing: ${{ secrets.gaoxing }}
+          question: ${{ secrets.question }}
+          domain: ${{ secrets.domain }}
+          notify: ${{ secrets.NOTIFY }}
+
 
 
