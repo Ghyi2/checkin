@@ -19,6 +19,5 @@ jobs:
       - name: 执行签到
         run: npm run main
         env:
-          gaoxing: ${{ secrets.gaoxing }}
-          question: ${{ secrets.question }}
-          domain: ${{ secrets.domain }}
+          GLADOS: ${{ secrets.GLADOS }}
+          NOTIFY: ${{ secrets.NOTIFY }}
